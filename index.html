@@ -20,6 +20,9 @@
       href="https://fonts.googleapis.com/css2?family=Text+Me+One&family=Ubuntu:wght@300&display=swap"
       rel="stylesheet"
     />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <script src="main.js"></script>
 
     <title>Document</title>
   </head>
@@ -46,15 +49,15 @@
             required
           />
           <br />
-          <button>Log in</button>
+          <button id="Button">Log in</button>
           <div class="image-container">
-            <img src="Googleogo.png" alt="Googlelogo"><div class="logingoogle">Log in with Google</div>
+            <img src="assets/Googleogo.png" alt="Googlelogo"><div class="logingoogle">Log in with Google</div>
 
           </div>
 
           <br />
-          <div class="scg">
-            <svg xmlns="http://www.w3.org/2000/svg" width="169" height="15" viewBox="0 0 169 15" fill="none">
+          <div>
+            <svg id="responsiveSvg1"xmlns="http://www.w3.org/2000/svg" width="169" height="15" viewBox="0 0 169 15" fill="none">
               <g filter="url(#filter0_d_1_25)">
                 <path d="M1 3C0.723858 3 0.5 3.22386 0.5 3.5C0.5 3.77614 0.723858 4 1 4V3ZM156.333 3.5C156.333 4.97276 157.527 6.16667 159 6.16667C160.473 6.16667 161.667 4.97276 161.667 3.5C161.667 2.02724 160.473 0.833333 159 0.833333C157.527 0.833333 156.333 2.02724 156.333 3.5ZM1 4H159V3H1V4Z" fill="#ADADAD"/>              </g>
               <defs>
@@ -71,7 +74,7 @@
               </defs>
             </svg>
             <div class="inline">OR</div>
-          <svg xmlns="http://www.w3.org/2000/svg" width="169" height="15" viewBox="0 0 169 15" fill="none">
+          <svg id="responsiveSvg2" xmlns="http://www.w3.org/2000/svg" width="169" height="15" viewBox="0 0 169 15" fill="none">
             <g filter="url(#filter0_d_1_25)">
             <path d="M0.333333 3.5C0.333333 4.97276 1.52724 6.16667 3 6.16667C4.47276 6.16667 5.66667 4.97276 5.66667 3.5C5.66667 2.02724 4.47276 0.833333 3 0.833333C1.52724 0.833333 0.333333 2.02724 0.333333 3.5ZM3 4L161 4V3L3 3V4Z" fill="#ADADAD"/>
             </g>
@@ -88,9 +91,40 @@
             </filter>
           </defs>
           </svg>
+          <div class="mkacc">
+            Don't have an account? <a href="#"class="a" >Signup</a>
+          </div>
+          <div class="forgotpass">
+           <a href="#">Forgot password?</a>
+          </div>
         </div>
         </form>
       </div>
     </div>
   </body>
+  <script>
+    // JavaScript to dynamically update SVG width based on screen width
+    function updateSvgWidth(svgId, defaultWidth, responsiveWidth) {
+        var svgElement = document.getElementById(svgId);
+        var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+        // Set the SVG width to responsiveWidth when screen width is 522 or less
+        if (screenWidth <= 522) {
+            svgElement.setAttribute("width", responsiveWidth);
+        } else {
+            // Reset to the default width when screen width is greater than 522
+            svgElement.setAttribute("width", defaultWidth);
+        }
+    }
+
+    // Initial calls to set the SVG widths on page load
+    updateSvgWidth("responsiveSvg1", "169", "140");
+    updateSvgWidth("responsiveSvg2", "169", "140");
+
+    // Add event listeners to update the SVG widths on window resize
+    window.addEventListener("resize", function () {
+        updateSvgWidth("responsiveSvg1", "169", "140");
+        updateSvgWidth("responsiveSvg2", "169", "140");
+    });
+</script>
 </html>

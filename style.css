@@ -1,5 +1,5 @@
 body {
-  background-image: url(cool-background.png);
+  background-image: url(assets/cool-background.png);
   background-repeat: no-repeat;
   flex-shrink: 0;
   background-position: center;
@@ -21,7 +21,7 @@ body {
 .rectangle:hover {
   backdrop-filter: blur(0px);
   box-shadow: 0 0 1px rgba(29, 30, 31, 0.71);
-  /* Adjust hover styles as needed */
+
 }
 
 .fa-cubes {
@@ -37,7 +37,7 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  justify-content: center; /* Horizontal alignment */
+  justify-content: center; 
   display: flex;
   align-items: center;
   margin-top: 17rem;
@@ -45,8 +45,8 @@ body {
 }
 
 form {
-  text-align: center; /* Center the content horizontally */
-  margin-top: 30px; /* Center the content vertically */
+  text-align: center; 
+  margin-top: 30px; 
   z-index: 0;
 }
 
@@ -69,7 +69,7 @@ input::placeholder {
 }
 
 #username {
-  background-image: url(user.png);
+  background-image: url(assets/user.png);
   background-repeat: no-repeat;
   background-position: 2%;
   width: 355.811px;
@@ -81,7 +81,7 @@ input::placeholder {
 }
 
 #password {
-  background-image: url(lock.png);
+  background-image: url(assets/lock.png);
   background-repeat: no-repeat;
   background-position: 2.5%;
   width: 355.811px;
@@ -107,6 +107,10 @@ button {
   background: rgba(76, 181, 249, 0.95);
   outline: none;
   border: none;
+}
+
+button:hover{
+  background: rgba(0, 153, 255, 0.95);
 }
 
 .logingoogle {
@@ -136,25 +140,102 @@ img {
   height: 30px;
   flex-shrink: 0;
 }
-.svg{
-  padding-top:0px;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-}
-.inline{
-  display:inline-flex;
+
+.inline {
+  display: inline-flex;
   padding-right: 10px;
-  padding-left: 5px;
+  padding-left: 15px;
   align-items: center;
   justify-content: center;
   color: #000;
+  font-family: Ubuntu;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.mkacc{
+  color: #000;
+  padding-top: 12px;
+text-shadow: 7px 4px 4px rgba(0, 0, 0, 0.25);
 font-family: Ubuntu;
+font-size: 24px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+}
+
+.a{
+  color: rgb(76, 180, 249);
+font-family: Text Me One;
 font-size: 24px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
-
+text-decoration-line: underline;
 }
 
+.a:hover{
+  color: rgba(0, 134, 224, 0.95);
+  font-size: 26px;
+}
 
+.forgotpass{
+  color: #57BDFF;
+text-align: center;
+text-shadow: 7px 4px 4px rgba(0, 0, 0, 0.25);
+font-family: Ubuntu;
+font-size: 25px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-decoration-line: underline;
+padding-top:18px ;
+}
+
+@media (max-width: 522px) {
+
+  .companyname {
+    font-size: 33px;
+    margin-top: 12rem;
+  }
+  #username,
+  #password{
+    width: 305.811px;
+  }
+  button {
+    width: 347.811px;
+  }
+
+  button {
+    font-size: 20px;
+  }
+
+  .logingoogle{
+    font-size: 22px;
+  }
+
+  img{
+    width: 27px;
+    height: 27px;
+  }
+
+  .inline {
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 22px;
+  }
+
+  .mkacc{
+    font-size: 22px;
+  }
+
+  .a{
+    font-size: 22px;
+  }
+
+  .forgotpass{
+    font-size: 22px;
+  }
+}
