@@ -195,7 +195,7 @@ padding-top:18px ;
 }
 
 @media (max-width: 522px) {
-
+  
   .companyname {
     font-size: 33px;
     margin-top: 12rem;
@@ -236,5 +236,23 @@ padding-top:18px ;
 
   .forgotpass{
     font-size: 22px;
+  }
+}
+
+@media (max-width: 380px) {
+
+  .companyname {
+    font-size: 31px;
+    margin-top: 12rem;
+  }
+  #username,
+  #password{
+    width: 275.811px;
+  }
+  
+  button {
+    width: 317.811px;
+    font-size: 22px;
+
   }
 }
