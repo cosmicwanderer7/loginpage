@@ -204,12 +204,11 @@ padding-top:18px ;
   #password{
     width: 305.811px;
   }
+  
   button {
     width: 347.811px;
-  }
+    font-size: 22px;
 
-  button {
-    font-size: 20px;
   }
 
   .logingoogle{
