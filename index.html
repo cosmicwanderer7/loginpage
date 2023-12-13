@@ -103,25 +103,20 @@
     </div>
   </body>
   <script>
-    // JavaScript to dynamically update SVG width based on screen width
     function updateSvgWidth(svgId, defaultWidth, responsiveWidth) {
         var svgElement = document.getElementById(svgId);
         var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
-        // Set the SVG width to responsiveWidth when screen width is 522 or less
         if (screenWidth <= 522) {
             svgElement.setAttribute("width", responsiveWidth);
         } else {
-            // Reset to the default width when screen width is greater than 522
             svgElement.setAttribute("width", defaultWidth);
         }
     }
 
-    // Initial calls to set the SVG widths on page load
     updateSvgWidth("responsiveSvg1", "169", "140");
     updateSvgWidth("responsiveSvg2", "169", "140");
 
-    // Add event listeners to update the SVG widths on window resize
     window.addEventListener("resize", function () {
         updateSvgWidth("responsiveSvg1", "169", "140");
         updateSvgWidth("responsiveSvg2", "169", "140");
