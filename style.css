@@ -40,7 +40,7 @@ body {
   justify-content: center; 
   display: flex;
   align-items: center;
-  margin-top: 15rem;
+  margin-top: 21vh; 
   z-index: 0;
 }
 
