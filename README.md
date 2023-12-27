@@ -6,6 +6,6 @@
 
 ## Web Design
 
-![Web Design](https://github.com/cosmicwanderer7/loginpage/assets/65147258/24db1843-389d-40b6-8892-48c23405a10b))
+![Web Design](https://github.com/cosmicwanderer7/loginpage/assets/65147258/24db1843-389d-40b6-8892-48c23405a10b)
 
 
